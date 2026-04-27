@@ -1,26 +1,48 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* BIOJENA Core Palette */
+  --bg-pure: #ffffff;
+  --bg-panel: #f5f5f5;
+  --text-primary: #0A3B2A;
+  /* Deep Forest Green */
+  --accent-sulfur: #FFD54F;
+  /* Bioluminescent Yellow */
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  /* Map CSS variables to Tailwind classes */
+  --color-bio-bg: var(--bg-pure);
+  --color-bio-panel: var(--bg-panel);
+  --color-bio-primary: var(--text-primary);
+  --color-bio-accent: var(--accent-sulfur);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* Map fonts from layout.tsx */
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, monospace;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-pure);
+  color: var(--text-primary);
+  /* The antialiased class makes text look sharper and more premium on Mac/iOS */
+  @apply antialiased;
+}
+
+/* Custom Utility for our "Signature Button" 
+  This creates the "bleeding" hover effect we planned.
+*/
+@layer utilities {
+  .btn-biojena {
+    @apply relative overflow-hidden border border-bio-primary text-bio-primary px-8 py-3 uppercase tracking-widest text-sm font-semibold transition-colors duration-300;
+  }
+
+  .btn-biojena::before {
+    content: '';
+    @apply absolute inset-0 bg-bio-accent scale-x-0 origin-center transition-transform duration-500 ease-out z-[-1];
+  }
+
+  .btn-biojena:hover::before {
+    @apply scale-x-100;
+  }
 }
