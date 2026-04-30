@@ -38,11 +38,11 @@ export default function Technology() {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
-                    className="flex items-center gap-3 mb-6"
+                    className="flex items-center gap-3 mb-8"
                 >
                     <span className="w-2 h-2 rounded-full bg-bio-accent"></span>
-                    <span className="font-mono text-[10px] tracking-widest uppercase text-bio-primary">
-                        Technology
+                    <span className="font-mono text-[14px] tracking-widest uppercase text-bio-primary">
+                        MARKET SECTORS
                     </span>
                 </motion.div>
 
@@ -67,7 +67,8 @@ export default function Technology() {
                         className="md:w-5/12 flex flex-col justify-end"
                     >
                         <p className="font-mono text-sm leading-relaxed text-bio-primary/70">
-                            A controlled fermentation process that shapes materials during growth. By manipulating the biological matrix at the microscopic level, we dictate structure, performance, and functionality.
+                            Our Proprietary Bioreactors with Mobile Matrix Reservoir Technology
+                            BIOJENA's proprietary bioreactor system utilizes Mobile Matrix Reservoir (MMR) Technology—a controlled fermentation process that shapes materials during growth. Our specialized bioreactors enable precise manipulation of the biological matrix at the microscopic level, giving us direct control over structure, performance, and functionality. By cycling shaped templates between fermentation medium and air phases, we guide BioCellulose synthesis layer by layer as it forms. This dynamic approach allows us to engineer material properties during biosynthesis rather than through post-processing. The result is application-specific BioCellulose with custom geometry, tunable porosity, multilayer functionality, and integrated active ingredients—all achieved in a single fermentation cycle. Our bioreactor design transforms MMR Technology from a laboratory concept into a scalable production platform for precision-engineered biomaterials.
                         </p>
                     </motion.div>
                 </div>
@@ -85,19 +86,22 @@ export default function Technology() {
                     >
                         <div ref={ref1} className="w-full aspect-square bg-[#F4F4F4] overflow-hidden mb-6 relative">
                             <motion.div style={{ y: y1 }} className="absolute inset-0 w-full h-[130%] -top-[15%]">
-                                <Image
-                                    src="/images/technology/Structured Sheets.png"
-                                    alt="Structured Sheets"
-                                    fill
-                                    className="object-cover transition-transform duration-700 group-hover:scale-105"
-                                />
+                                <div className="relative w-full h-full">
+                                    <Image
+                                        src="/images/technology/Structured Sheets.png"
+                                        alt="Structured Sheets"
+                                        fill
+                                        sizes="(max-width: 768px) 100vw, 33vw"
+                                        className="object-cover transition-transform duration-700 group-hover:scale-105"
+                                    />
+                                </div>
                             </motion.div>
                         </div>
 
                         <div className="flex justify-between items-start">
                             <div>
                                 <h3 className="text-xl font-sans font-medium text-bio-primary mb-1">Structured Sheets</h3>
-                                <p className="font-mono text-xs text-bio-primary/50 uppercase tracking-widest">Masks & patches</p>
+                                <p className="font-mono text-[14px] text-bio-primary/50 uppercase tracking-widest">Masks & patches</p>
                             </div>
 
                             <div className="w-8 h-8 rounded-full border border-bio-panel flex items-center justify-center group-hover:bg-bio-accent group-hover:border-bio-accent transition-colors duration-300 flex-shrink-0">
@@ -122,19 +126,22 @@ export default function Technology() {
                     >
                         <div ref={ref2} className="w-full aspect-square bg-[#F4F4F4] overflow-hidden mb-6 relative">
                             <motion.div style={{ y: y2 }} className="absolute inset-0 w-full h-[130%] -top-[15%]">
-                                <Image
-                                    src="/images/technology/Functional Matrices.png"
-                                    alt="Functional Matrices"
-                                    fill
-                                    className="object-cover transition-transform duration-700 group-hover:scale-105"
-                                />
+                                <div className="relative w-full h-full">
+                                    <Image
+                                        src="/images/technology/Functional Matrices.png"
+                                        alt="Functional Matrices"
+                                        fill
+                                        sizes="(max-width: 768px) 100vw, 33vw"
+                                        className="object-cover transition-transform duration-700 group-hover:scale-105"
+                                    />
+                                </div>
                             </motion.div>
                         </div>
 
                         <div className="flex justify-between items-start">
                             <div>
                                 <h3 className="text-xl font-sans font-medium text-bio-primary mb-1">Functional Matrices</h3>
-                                <p className="font-mono text-xs text-bio-primary/50 uppercase tracking-widest">Hydration & delivery</p>
+                                <p className="font-mono text-[14px] text-bio-primary/50 uppercase tracking-widest">Hydration & delivery</p>
                             </div>
 
                             <div className="w-8 h-8 rounded-full border border-bio-panel flex items-center justify-center group-hover:bg-bio-accent group-hover:border-bio-accent transition-colors duration-300 flex-shrink-0">
@@ -159,19 +166,22 @@ export default function Technology() {
                     >
                         <div ref={ref3} className="w-full aspect-square bg-[#F4F4F4] overflow-hidden mb-6 relative">
                             <motion.div style={{ y: y3 }} className="absolute inset-0 w-full h-[130%] -top-[15%]">
-                                <Image
-                                    src="/images/technology/Custom Structures.png"
-                                    alt="Custom Structures"
-                                    fill
-                                    className="object-cover transition-transform duration-700 group-hover:scale-105"
-                                />
+                                <div className="relative w-full h-full">
+                                    <Image
+                                        src="/images/technology/Custom Structures.png"
+                                        alt="Custom Structures"
+                                        fill
+                                        sizes="(max-width: 768px) 100vw, 33vw"
+                                        className="object-cover transition-transform duration-700 group-hover:scale-105"
+                                    />
+                                </div>
                             </motion.div>
                         </div>
 
                         <div className="flex justify-between items-start">
                             <div>
                                 <h3 className="text-xl font-sans font-medium text-bio-primary mb-1">Custom Structures</h3>
-                                <p className="font-mono text-xs text-bio-primary/50 uppercase tracking-widest">Multilayer & tailored</p>
+                                <p className="font-mono text-[14px] text-bio-primary/50 uppercase tracking-widest">Multilayer & tailored</p>
                             </div>
 
                             <div className="w-8 h-8 rounded-full border border-bio-panel flex items-center justify-center group-hover:bg-bio-accent group-hover:border-bio-accent transition-colors duration-300 flex-shrink-0">

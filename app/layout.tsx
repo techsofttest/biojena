@@ -3,6 +3,7 @@ import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import LoadingScreen from "./components/LoadingScreen"; // <-- Import it
+import Footer from "./components/Footer";
 
 const inter = Inter({
   variable: "--font-sans",
@@ -25,13 +26,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${inter.variable} ${jetbrainsMono.variable}`}>
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${inter.variable} ${jetbrainsMono.variable}`} suppressHydrationWarning>
         {/* The loading screen sits on top of everything */}
         <LoadingScreen />
 
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

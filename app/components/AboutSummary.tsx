@@ -46,7 +46,7 @@ export default function AboutSummary() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.8, delay: 0.4 }}
                     >
-                        <Link href="/company" className="group inline-flex items-center gap-6 w-fit py-2">
+                        {/* <Link href="/company" className="group inline-flex items-center gap-6 w-fit py-2">
                             <span className="font-mono text-xs font-bold tracking-[0.2em] uppercase text-bio-primary">
                                 Read Full Story
                             </span>
@@ -54,7 +54,7 @@ export default function AboutSummary() {
                                 <span className="w-12 h-[1px] bg-bio-primary group-hover:w-20 group-hover:bg-bio-accent transition-all duration-500 ease-in-out"></span>
                                 <span className="absolute right-0 w-2 h-2 border-r border-t border-bio-primary group-hover:border-bio-accent rotate-45 transition-colors"></span>
                             </div>
-                        </Link>
+                        </Link> */}
                     </motion.div>
                 </div>
 
@@ -68,11 +68,12 @@ export default function AboutSummary() {
                         transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
                         className="w-full aspect-square md:aspect-[4/5] bg-bio-panel relative overflow-hidden group border border-bio-panel"
                     >
-                        <div className="absolute inset-0 bg-[#F4F4F4] group-hover:scale-105 transition-transform duration-1000 ease-out">
+                        <div className="relative w-full h-full bg-[#F4F4F4] group-hover:scale-105 transition-transform duration-1000 ease-out">
                             <Image
                                 src="/images/home-about/ab.png"
                                 alt="Bio-Fabricated Sculpt"
                                 fill
+                                sizes="(max-width: 768px) 100vw, 41vw"
                                 className="object-cover"
                                 priority
                             />
@@ -88,7 +89,7 @@ export default function AboutSummary() {
                             transition={{ duration: 0.8 }}
                             className="font-mono text-sm leading-relaxed text-bio-primary/90"
                         >
-                            <strong className="text-bio-primary">BIOJENA</strong> is a biomaterials company developing sustainable alternatives for the cosmetics industry. We work with bacterial nanocellulose, a natural material produced through fermentation.
+                            <strong className="text-bio-primary">BIOJENA</strong> is a biomaterials company developing sustainable alternatives for the cosmetics industry. We work with BioCellulose, a natural material produced through fermentation. Unlike conventional plant-based materials that lack consistency, BioCellulose offers pharmaceutical-grade purity and exceptional structural integrity.
                         </motion.p>
 
                         <div className="w-full h-[1px] bg-bio-panel"></div>
@@ -100,7 +101,7 @@ export default function AboutSummary() {
                             transition={{ duration: 0.8, delay: 0.1 }}
                             className="font-mono text-sm leading-relaxed text-bio-primary/70"
                         >
-                            Using our specialized Mobile Matrix Reservoir Technology, we control the structure and shape of this material during production. This allows us to create high-performance, biodegradable materials that can seamlessly replace synthetic ingredients in cosmetic products without compromising on quality or efficacy.
+                            Our proprietary bioreactors utilize Mobile Matrix Reservoir (MMR) Technology to control the structure and shape of BioCellulose during production. This approach allows us to engineer material properties at the biosynthesis level—defining geometry, porosity, and functionality as the material grows. The result is precision-designed materials that can seamlessly replace synthetic ingredients in cosmetic products without compromising on quality or efficacy.
                         </motion.p>
 
                         <motion.p
@@ -110,7 +111,8 @@ export default function AboutSummary() {
                             transition={{ duration: 0.8, delay: 0.2 }}
                             className="font-mono text-sm leading-relaxed text-bio-primary/70"
                         >
-                            Our vision is to bridge the gap between high-end biotechnology and the luxury cosmetic market, ensuring that the next generation of beauty products is as pure as it is performant.
+                            The cosmetics industry faces a critical choice: continue relying on fossil-derived synthetics or accept the limitations of conventional bio-based alternatives. We've created a third path. By combining advanced fermentation biotechnology with precision material engineering, we deliver BioCellulose that performs like a synthetic but degrades like a leaf. <br />
+                            Our vision is to bridge the gap between high-end biotechnology and the luxury cosmetic market, ensuring that the next generation of beauty products is as pure as it is performant. Sustainability should never require compromise—it should elevate what's possible.
                         </motion.p>
                     </div>
                 </div>

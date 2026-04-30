@@ -37,7 +37,7 @@ export default function Hero() {
                     >
                         <span className="w-[1px] h-8 bg-bio-accent"></span>
                         <span className="font-mono text-xs tracking-[0.3em] uppercase text-white">
-                            BIOJENA Technology
+                            BIOJENA
                         </span>
                     </motion.div>
 

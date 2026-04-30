@@ -2,7 +2,6 @@ import Hero from "./components/Hero";
 import Thesis from "./components/Thesis";
 import Technology from "./components/Technology";
 import AboutSummary from "./components/AboutSummary";
-import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -19,9 +18,6 @@ export default function Home() {
 
       {/* 04. The Mission Statement */}
       <AboutSummary />
-
-      {/* 05. The Direct Contact Footer */}
-      <Footer />
 
     </main>
   );

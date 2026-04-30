@@ -32,7 +32,7 @@ export default function Thesis() {
                         transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
                         className="flex-1 font-mono text-sm leading-relaxed text-bio-primary/80"
                     >
-                        The industry relies heavily on synthetic, fossil-derived ingredients that compromise the environment, or plant-based alternatives that lack structural purity. BIOJENA bridges this gap by engineering pure bacterial nanocellulose—a material that performs like a synthetic but degrades like a leaf.
+                        The industry relies heavily on synthetic, fossil-derived ingredients that compromise the environment, or plant-based alternatives that lack structural purity and performance consistency. BIOJENA bridges this gap by engineering pure BioCellulose—a material that performs like a synthetic but degrades like a leaf. Using our proprietary bioreactors with Mobile Matrix Reservoir (MMR) Technology, we achieve precision control over material architecture during biosynthesis. This enables application-specific properties—custom geometry, tunable porosity, multilayer functionality—all in a single fermentation cycle. The result: pharmaceutical-grade purity with cosmetic-grade performance, 100% biodegradable, and designed to meet your exact formulation needs.
                     </motion.p>
 
                     {/* Technical Validation Block */}
@@ -45,14 +45,15 @@ export default function Thesis() {
                     >
 
                         <div className="flex flex-col gap-1">
-                            <span className="font-mono text-[10px] uppercase tracking-widest text-bio-primary/50">Biodegradability Rating</span>
-                            <span className="font-mono text-lg font-bold text-bio-primary">100% (Absolute)</span>
+                            <span className="font-mono text-[14px] uppercase tracking-widest text-bio-primary/50">Biodegradability Rating</span>
+                            <div className="flex gap-1">
+                                {[1, 2, 3, 4, 5].map((i) => (
+                                    <div key={i} className="w-6 h-1.5 bg-bio-accent"></div>
+                                ))}
+                            </div>
                         </div>
-
-                        <div className="w-full h-[1px] bg-bio-primary/10"></div>
-
-                        <div className="flex flex-col gap-1">
-                            <span className="font-mono text-[10px] uppercase tracking-widest text-bio-primary/50">MMR Purity Standard</span>
+                        <div className="flex flex-col gap-2">
+                            <span className="font-mono text-[14px] uppercase tracking-widest text-bio-primary/50">MMR Purity Standard</span>
                             <span className="font-mono text-lg font-bold text-bio-primary">&gt;99.8%</span>
                         </div>
 
@@ -63,4 +64,4 @@ export default function Thesis() {
             </div>
         </section>
     );
-}
+}

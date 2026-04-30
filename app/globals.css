@@ -8,6 +8,8 @@
   /* Deep Forest Green */
   --accent-sulfur: #FFD54F;
   /* Bioluminescent Yellow */
+  --accent-sulfur-dark: #C28B00;
+  /* Darker Golden Yellow for contrast on light backgrounds */
 }
 
 @theme inline {
@@ -16,6 +18,7 @@
   --color-bio-panel: var(--bg-panel);
   --color-bio-primary: var(--text-primary);
   --color-bio-accent: var(--accent-sulfur);
+  --color-bio-accent-dark: var(--accent-sulfur-dark);
 
   /* Map fonts from layout.tsx */
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
